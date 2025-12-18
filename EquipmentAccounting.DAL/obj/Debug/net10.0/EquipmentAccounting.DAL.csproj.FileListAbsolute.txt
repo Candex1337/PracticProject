@@ -11,3 +11,17 @@ C:\Users\cande\source\repos\EquipmentAccounting\EquipmentAccounting.DAL\obj\Debu
 C:\Users\cande\source\repos\EquipmentAccounting\EquipmentAccounting.DAL\obj\Debug\net10.0\refint\EquipmentAccounting.DAL.dll
 C:\Users\cande\source\repos\EquipmentAccounting\EquipmentAccounting.DAL\obj\Debug\net10.0\EquipmentAccounting.DAL.pdb
 C:\Users\cande\source\repos\EquipmentAccounting\EquipmentAccounting.DAL\obj\Debug\net10.0\ref\EquipmentAccounting.DAL.dll
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.DAL\bin\Debug\net10.0\EquipmentAccounting.DAL.dll.config
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.DAL\bin\Debug\net10.0\EquipmentAccounting.DAL.deps.json
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.DAL\bin\Debug\net10.0\EquipmentAccounting.DAL.dll
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.DAL\bin\Debug\net10.0\EquipmentAccounting.DAL.pdb
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.DAL\obj\Debug\net10.0\EquipmentAccounting.DAL.csproj.AssemblyReference.cache
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.DAL\obj\Debug\net10.0\EquipmentAccounting.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.DAL\obj\Debug\net10.0\EquipmentAccounting.DAL.AssemblyInfoInputs.cache
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.DAL\obj\Debug\net10.0\EquipmentAccounting.DAL.AssemblyInfo.cs
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.DAL\obj\Debug\net10.0\EquipmentAccounting.DAL.csproj.CoreCompileInputs.cache
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.DAL\obj\Debug\net10.0\EquipmentAccounting.DAL.sourcelink.json
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.DAL\obj\Debug\net10.0\EquipmentAccounting.DAL.dll
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.DAL\obj\Debug\net10.0\refint\EquipmentAccounting.DAL.dll
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.DAL\obj\Debug\net10.0\EquipmentAccounting.DAL.pdb
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.DAL\obj\Debug\net10.0\ref\EquipmentAccounting.DAL.dll

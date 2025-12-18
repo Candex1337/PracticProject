@@ -1,18 +1,8 @@
 <Solution>
-  <Folder Name="/Data/">
-    <File Path="FinanceDbContext.cs" />
-  </Folder>
-  <Folder Name="/Entities/">
-    <File Path="Account.cs" />
-    <File Path="Category.cs" />
-    <File Path="Currency.cs" />
-    <File Path="Role.cs" />
-    <File Path="Tag.cs" />
-    <File Path="Transaction.cs" />
-    <File Path="User.cs" />
-  </Folder>
   <Folder Name="/Элементы решения/">
     <File Path=".gitignore" />
   </Folder>
+  <Project Path="EquipmentAccounting.BLL/EquipmentAccounting.BLL.csproj" Id="9da113f2-bf83-432a-b7c0-9f3a4b6ab41c" />
   <Project Path="EquipmentAccounting.DAL/EquipmentAccounting.DAL.csproj" />
+  <Project Path="EquipmentAccounting.WinFormsUI/EquipmentAccounting.WinFormsUI.csproj" Id="e801a54b-520a-461a-8b26-f901c4e48bc5" />
 </Solution>

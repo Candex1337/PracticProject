@@ -1,0 +1,10 @@
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.WinFormsUI\bin\Debug\EquipmentAccounting.WinFormsUI.exe.config
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.WinFormsUI\bin\Debug\EquipmentAccounting.WinFormsUI.exe
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.WinFormsUI\bin\Debug\EquipmentAccounting.WinFormsUI.pdb
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.WinFormsUI\obj\Debug\EquipmentAccounting.WinFormsUI.csproj.AssemblyReference.cache
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.WinFormsUI\obj\Debug\EquipmentAccounting.WinFormsUI.MainForm.resources
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.WinFormsUI\obj\Debug\EquipmentAccounting.WinFormsUI.Properties.Resources.resources
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.WinFormsUI\obj\Debug\EquipmentAccounting.WinFormsUI.csproj.GenerateResource.cache
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.WinFormsUI\obj\Debug\EquipmentAccounting.WinFormsUI.csproj.CoreCompileInputs.cache
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.WinFormsUI\obj\Debug\EquipmentAccounting.WinFormsUI.exe
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.WinFormsUI\obj\Debug\EquipmentAccounting.WinFormsUI.pdb
