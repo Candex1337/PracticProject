@@ -17,12 +17,23 @@ namespace EquipmentAccounting.WinFormsUI
             InitializeComponent();
         }
 
-        private void аываыToolStripMenuItem_Click(object sender, EventArgs e)
+        private void navigationListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedItem = navigationListBox.SelectedItem.ToString();
+
+            MessageBox.Show($"Выбран раздел: {selectedItem}");
+        }
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
         {
 
         }
