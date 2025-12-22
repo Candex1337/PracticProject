@@ -30,14 +30,25 @@ namespace EquipmentAccounting.WinFormsUI
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (navigationListBox.SelectedItem.ToString() == "Сотрудники")
+            if (navigationListBox.SelectedItem == null)
+                return;
+
+            string selected = navigationListBox.SelectedItem.ToString();
+
+            switch (selected)
             {
-                new EmployeeForm().ShowDialog();
+                case "Подразделения":
+                    new DepartmentForm().ShowDialog();
+                    break;
+
+                case "Сотрудники":
+                    new EmployeeForm().ShowDialog();
+                    break;
+
+                case "Оборудование":
+                    new EquipmentForm().ShowDialog();
+                    break;
             }
-
-            string selectedItem = navigationListBox.SelectedItem.ToString();
-
-            MessageBox.Show($"Выбран раздел: {selectedItem}");
         }
 
         private void MainForm_Load(object sender, EventArgs e)

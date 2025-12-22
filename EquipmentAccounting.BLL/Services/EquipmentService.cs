@@ -40,5 +40,12 @@ namespace EquipmentAccounting.BLL.Services
                 db.SaveChanges();
             }
         }
+
+        public Equipment FindByInventoryNumber(string inventoryNumber)
+        {
+            return db.Equipments
+                .FirstOrDefault(e => e.InventoryNumber == inventoryNumber);
+        }
+
     }
 }

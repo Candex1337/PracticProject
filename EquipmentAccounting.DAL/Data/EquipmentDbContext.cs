@@ -11,6 +11,8 @@ namespace EquipmentAccounting.DAL.Data
         public DbSet<EquipmentType> EquipmentTypes { get; set; }
         public DbSet<Equipment> Equipments { get; set; }
 
+        public DbSet<EquipmentStatus> EquipmentStatuses { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;

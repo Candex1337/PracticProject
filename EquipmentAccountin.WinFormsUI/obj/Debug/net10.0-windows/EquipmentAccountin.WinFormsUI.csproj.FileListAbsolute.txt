@@ -74,3 +74,5 @@ C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\obj\Deb
 C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\obj\Debug\net10.0-windows\EquipmentAccountin.WinFormsUI.pdb
 C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\obj\Debug\net10.0-windows\EquipmentAccountin.WinFormsUI.genruntimeconfig.cache
 C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\obj\Debug\net10.0-windows\ref\EquipmentAccountin.WinFormsUI.dll
+C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\obj\Debug\net10.0-windows\EquipmentAccountin.WinFormsUI.EquipmentForm.resources
+C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\bin\Debug\net10.0-windows\EquipmentAccountin.WinFormsUI.dll.config
