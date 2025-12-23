@@ -28,34 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            softwareListBox = new ListBox();
             licenseComboBox = new ComboBox();
             installButton = new Button();
             removeButton = new Button();
-            equipmentListBox = new ListBox();
+            softwareListBox = new ListBox();
             SuspendLayout();
-            // 
-            // softwareListBox
-            // 
-            softwareListBox.FormattingEnabled = true;
-            softwareListBox.Location = new Point(240, 82);
-            softwareListBox.Name = "softwareListBox";
-            softwareListBox.Size = new Size(114, 94);
-            softwareListBox.TabIndex = 0;
             // 
             // licenseComboBox
             // 
             licenseComboBox.FormattingEnabled = true;
-            licenseComboBox.Location = new Point(360, 82);
+            licenseComboBox.Location = new Point(184, 12);
             licenseComboBox.Name = "licenseComboBox";
             licenseComboBox.Size = new Size(134, 23);
             licenseComboBox.TabIndex = 1;
             // 
             // installButton
             // 
-            installButton.Location = new Point(240, 182);
+            installButton.Location = new Point(184, 84);
             installButton.Name = "installButton";
-            installButton.Size = new Size(104, 23);
+            installButton.Size = new Size(134, 23);
             installButton.TabIndex = 2;
             installButton.Text = "Установить";
             installButton.UseVisualStyleBackColor = true;
@@ -63,28 +54,26 @@
             // 
             // removeButton
             // 
-            removeButton.Location = new Point(350, 182);
+            removeButton.Location = new Point(184, 113);
             removeButton.Name = "removeButton";
-            removeButton.Size = new Size(94, 23);
+            removeButton.Size = new Size(134, 23);
             removeButton.TabIndex = 3;
             removeButton.Text = "Удалить";
             removeButton.UseVisualStyleBackColor = true;
             removeButton.Click += removeButton_Click;
             // 
-            // equipmentListBox
+            // softwareListBox
             // 
-            equipmentListBox.FormattingEnabled = true;
-            equipmentListBox.Location = new Point(120, 82);
-            equipmentListBox.Name = "equipmentListBox";
-            equipmentListBox.Size = new Size(114, 94);
-            equipmentListBox.TabIndex = 4;
+            softwareListBox.Location = new Point(12, 12);
+            softwareListBox.Name = "softwareListBox";
+            softwareListBox.Size = new Size(166, 124);
+            softwareListBox.TabIndex = 5;
             // 
             // EquipmentSoftwareForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(equipmentListBox);
+            ClientSize = new Size(333, 147);
             Controls.Add(removeButton);
             Controls.Add(installButton);
             Controls.Add(licenseComboBox);
@@ -96,11 +85,9 @@
         }
 
         #endregion
-
-        private ListBox softwareListBox;
         private ComboBox licenseComboBox;
         private Button installButton;
         private Button removeButton;
-        private ListBox equipmentListBox;
+        private ListBox softwareListBox;
     }
 }

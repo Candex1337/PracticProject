@@ -15,6 +15,10 @@ namespace EquipmentAccounting.DAL.Entities
         public SoftwareLicense SoftwareLicense { get; set; }
 
         public DateTime InstallDate { get; set; }
-    }
 
+        public override string ToString()
+        {
+            return SoftwareLicense?.Name ?? "Без лицензии";
+        }
+    }
 }

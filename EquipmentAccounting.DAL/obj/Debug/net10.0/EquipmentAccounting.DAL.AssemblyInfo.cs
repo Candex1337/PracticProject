@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EquipmentAccounting.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea6f044670e70b03be62fa27e8ad0a586bf7fe33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58f7211b018d5001dec221c078fc3fd84a89cc99")]
 [assembly: System.Reflection.AssemblyProductAttribute("EquipmentAccounting.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EquipmentAccounting.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

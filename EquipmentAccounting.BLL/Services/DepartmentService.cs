@@ -25,5 +25,15 @@ namespace EquipmentAccounting.BLL.Services
             db.Departments.Update(department);
             db.SaveChanges();
         }
+
+        public void Delete(int id)
+        {
+            var department = db.Departments.Find(id);
+            if (department != null)
+            {
+                db.Departments.Remove(department);
+                db.SaveChanges();
+            }
+        }
     }
 }

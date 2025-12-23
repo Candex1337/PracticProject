@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             employeesGridView = new DataGridView();
-            addButton = new Button();
             editButton = new Button();
+            addButton = new Button();
             deleteButton = new Button();
             ((System.ComponentModel.ISupportInitialize)employeesGridView).BeginInit();
             SuspendLayout();
@@ -38,44 +38,47 @@
             // employeesGridView
             // 
             employeesGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            employeesGridView.Location = new Point(118, 78);
+            employeesGridView.Location = new Point(12, 12);
             employeesGridView.Name = "employeesGridView";
-            employeesGridView.Size = new Size(117, 144);
+            employeesGridView.Size = new Size(390, 216);
             employeesGridView.TabIndex = 0;
             employeesGridView.CellContentClick += employeesGridView_CellContentClick;
             // 
-            // addButton
-            // 
-            addButton.Location = new Point(241, 107);
-            addButton.Name = "addButton";
-            addButton.Size = new Size(75, 23);
-            addButton.TabIndex = 1;
-            addButton.Text = "Добавить";
-            addButton.UseVisualStyleBackColor = true;
-            // 
             // editButton
             // 
-            editButton.Location = new Point(241, 136);
+            editButton.Location = new Point(149, 234);
             editButton.Name = "editButton";
-            editButton.Size = new Size(75, 23);
+            editButton.Size = new Size(133, 23);
             editButton.TabIndex = 2;
             editButton.Text = "Изменить";
             editButton.UseVisualStyleBackColor = true;
+            editButton.Click += editButton_Click;
+            // 
+            // addButton
+            // 
+            addButton.Location = new Point(12, 234);
+            addButton.Name = "addButton";
+            addButton.Size = new Size(131, 23);
+            addButton.TabIndex = 1;
+            addButton.Text = "Добавить";
+            addButton.UseVisualStyleBackColor = true;
+            addButton.Click += addButton_Click;
             // 
             // deleteButton
             // 
-            deleteButton.Location = new Point(241, 78);
+            deleteButton.Location = new Point(288, 234);
             deleteButton.Name = "deleteButton";
-            deleteButton.Size = new Size(75, 23);
+            deleteButton.Size = new Size(114, 23);
             deleteButton.TabIndex = 3;
             deleteButton.Text = "Удалить";
             deleteButton.UseVisualStyleBackColor = true;
+            deleteButton.Click += deleteButton_Click;
             // 
             // EmployeeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(378, 300);
+            ClientSize = new Size(415, 268);
             Controls.Add(deleteButton);
             Controls.Add(editButton);
             Controls.Add(addButton);
@@ -90,8 +93,8 @@
         #endregion
 
         private DataGridView employeesGridView;
-        private Button addButton;
         private Button editButton;
+        private Button addButton;
         private Button deleteButton;
     }
 }

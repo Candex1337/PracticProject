@@ -15,13 +15,21 @@ namespace EquipmentAccounting.BLL.Services
             return db.EquipmentHistories.ToList();
         }
 
+        public List<EquipmentHistory> GetByEquipment(int equipmentId)
+        {
+            return db.EquipmentHistories
+                .Where(h => h.EquipmentId == equipmentId)
+                .ToList();
+        }
+
         public void Add(int equipmentId, int? oldEmployeeId, int newEmployeeId)
         {
             var history = new EquipmentHistory
             {
                 EquipmentId = equipmentId,
                 OldEmployeeId = oldEmployeeId,
-                NewEmployeeId = newEmployeeId
+                NewEmployeeId = newEmployeeId,
+                ChangeDate = DateTime.Now,
             };
 
             db.EquipmentHistories.Add(history);

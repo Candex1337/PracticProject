@@ -13,5 +13,7 @@
         public EquipmentStatus EquipmentStatus { get; set; }
         public int? EmployeeId { get; set; }
         public Employee Employee { get; set; }
+        public string SerialNumber { get; set; }
+        public DateTime? InstallDate { get; set; }
     }
 }

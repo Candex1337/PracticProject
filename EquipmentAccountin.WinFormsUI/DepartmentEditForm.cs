@@ -19,6 +19,7 @@ namespace EquipmentAccounting.WinFormsUI
             if (Department != null)
             {
                 nameTextBox.Text = Department.Name;
+                headTextBox.Text = Department.HeadName;
             }
         }
 
@@ -39,8 +40,10 @@ namespace EquipmentAccounting.WinFormsUI
                 Department = new Department();
 
             Department.Name = nameTextBox.Text;
+            Department.HeadName = headTextBox.Text;
 
             DialogResult = DialogResult.OK;
+            Close();
         }
 
         private void label1_Click(object sender, EventArgs e)

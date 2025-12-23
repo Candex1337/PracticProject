@@ -41,14 +41,12 @@ namespace EquipmentAccountin.WinFormsUI
             typeComboBox.ValueMember = "Id";
             typeComboBox.SelectedIndex = -1;
 
-            // Сотрудники
             employeeComboBox.DataSource = null;
             employeeComboBox.DataSource = employeeService.GetAll();
             employeeComboBox.DisplayMember = "FullName";
             employeeComboBox.ValueMember = "Id";
             employeeComboBox.SelectedIndex = -1;
 
-            // Статусы
             statusComboBox.DataSource = null;
             statusComboBox.DataSource = statusService.GetAll();
             statusComboBox.DisplayMember = "Name";

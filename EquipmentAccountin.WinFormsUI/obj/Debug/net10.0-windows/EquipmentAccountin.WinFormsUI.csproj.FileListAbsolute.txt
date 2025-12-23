@@ -79,3 +79,4 @@ C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\bin\Deb
 C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\obj\Debug\net10.0-windows\EquipmentAccountin.WinFormsUI.HistoryForm.resources
 C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\obj\Debug\net10.0-windows\EquipmentAccountin.WinFormsUI.EquipmentSoftwareForm.resources
 C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\obj\Debug\net10.0-windows\EquipmentAccountin.WinFormsUI.ReportsForm.resources
+C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\obj\Debug\net10.0-windows\EquipmentAccountin.WinFormsUI.EmployeeEditForm.resources

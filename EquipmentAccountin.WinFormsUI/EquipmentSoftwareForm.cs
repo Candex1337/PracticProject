@@ -1,11 +1,6 @@
 ﻿using EquipmentAccounting.BLL.Services;
 using EquipmentAccounting.DAL.Entities;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace EquipmentAccountin.WinFormsUI
@@ -16,10 +11,13 @@ namespace EquipmentAccountin.WinFormsUI
 
         private readonly SoftwareLicenseService licenseService;
         private readonly EquipmentSoftwareService equipmentSoftwareService;
+
         public EquipmentSoftwareForm(int equipmentId)
         {
             InitializeComponent();
+
             _equipmentId = equipmentId;
+
             licenseService = new SoftwareLicenseService();
             equipmentSoftwareService = new EquipmentSoftwareService();
         }
@@ -30,12 +28,6 @@ namespace EquipmentAccountin.WinFormsUI
             LoadInstalledSoftware();
         }
 
-        private void LoadInstalledSoftware()
-        {
-            softwareListBox.DataSource = null;
-            softwareListBox.DataSource = equipmentSoftwareService.GetByEquipment(_equipmentId);
-            softwareListBox.DisplayMember = "SoftwareLicenseName";
-        }
         private void LoadLicenses()
         {
             licenseComboBox.DataSource = null;
@@ -45,23 +37,27 @@ namespace EquipmentAccountin.WinFormsUI
             licenseComboBox.SelectedIndex = -1;
         }
 
+        private void LoadInstalledSoftware()
+        {
+            softwareListBox.DataSource = null;
+            softwareListBox.DataSource = equipmentSoftwareService.GetByEquipment(_equipmentId);
+            softwareListBox.DisplayMember = null;
+        }
+
         private void addButton_Click(object sender, EventArgs e)
         {
-            if (equipmentListBox.SelectedItem == null ||
-                licenseComboBox.SelectedItem == null)
+            if (licenseComboBox.SelectedItem == null)
             {
-                MessageBox.Show("Выберите оборудование и лицензию");
+                MessageBox.Show("Выберите лицензию");
                 return;
             }
 
-            int equipmentId = ((Equipment)equipmentListBox.SelectedItem).Id;
-            int licenseId = ((SoftwareLicense)licenseComboBox.SelectedItem).Id;
+            int licenseId = (int)licenseComboBox.SelectedValue;
 
-            equipmentSoftwareService.Install(equipmentId, licenseId);
+            equipmentSoftwareService.Install(_equipmentId, licenseId);
 
             LoadInstalledSoftware();
         }
-
 
         private void removeButton_Click(object sender, EventArgs e)
         {

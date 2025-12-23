@@ -35,7 +35,7 @@
             // historyGridView
             // 
             historyGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            historyGridView.Location = new Point(57, 37);
+            historyGridView.Location = new Point(12, 12);
             historyGridView.Name = "historyGridView";
             historyGridView.Size = new Size(694, 291);
             historyGridView.TabIndex = 0;
@@ -44,7 +44,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(716, 314);
             Controls.Add(historyGridView);
             Name = "HistoryForm";
             Text = "HistoryForm";

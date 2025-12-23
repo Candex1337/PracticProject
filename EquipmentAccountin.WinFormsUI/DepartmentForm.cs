@@ -58,5 +58,27 @@ namespace EquipmentAccounting.WinFormsUI
         {
 
         }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            if (departmentsGridView.CurrentRow == null)
+                return;
+
+            var department =
+                (Department)departmentsGridView.CurrentRow.DataBoundItem;
+
+            var confirm = MessageBox.Show(
+                $"Удалить подразделение \"{department.Name}\"?",
+                "Подтверждение",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (confirm == DialogResult.Yes)
+            {
+                service.Delete(department.Id);
+                LoadDepartments();
+            }
+        }
     }
 }

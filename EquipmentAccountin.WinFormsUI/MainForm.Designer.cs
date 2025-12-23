@@ -28,73 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
-            файлToolStripMenuItem = new ToolStripMenuItem();
-            exitToolStripMenuItem = new ToolStripMenuItem();
             navigationListBox = new ListBox();
-            menuStrip1.SuspendLayout();
+            label1 = new Label();
             SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { файлToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(7, 2, 0, 2);
-            menuStrip1.Size = new Size(762, 24);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // файлToolStripMenuItem
-            // 
-            файлToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { exitToolStripMenuItem });
-            файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            файлToolStripMenuItem.Size = new Size(48, 20);
-            файлToolStripMenuItem.Text = "Файл";
-            // 
-            // exitToolStripMenuItem
-            // 
-            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(108, 22);
-            exitToolStripMenuItem.Text = "Выход";
-            exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
             // navigationListBox
             // 
             navigationListBox.FormattingEnabled = true;
             navigationListBox.Items.AddRange(new object[] { "Подразделения", "Сотрудники", "Оборудование", "История", "Отчёты" });
-            navigationListBox.Location = new Point(14, 70);
+            navigationListBox.Location = new Point(13, 51);
             navigationListBox.Margin = new Padding(4, 3, 4, 3);
             navigationListBox.Name = "navigationListBox";
             navigationListBox.Size = new Size(204, 109);
             navigationListBox.TabIndex = 1;
             navigationListBox.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label1.Location = new Point(12, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(101, 25);
+            label1.TabIndex = 2;
+            label1.Text = "Выберите:";
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(762, 434);
+            ClientSize = new Size(237, 174);
+            Controls.Add(label1);
             Controls.Add(navigationListBox);
-            Controls.Add(menuStrip1);
-            MainMenuStrip = menuStrip1;
             Margin = new Padding(4, 3, 4, 3);
             Name = "MainForm";
             Text = "MainForm";
             Load += MainForm_Load;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ListBox navigationListBox;
+        private Label label1;
     }
 }
 

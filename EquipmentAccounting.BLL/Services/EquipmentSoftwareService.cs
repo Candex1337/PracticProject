@@ -11,7 +11,6 @@ namespace EquipmentAccounting.BLL.Services
     {
         private EquipmentDbContext db = new EquipmentDbContext();
 
-        // Установить ПО на оборудование
         public void Install(int equipmentId, int licenseId)
         {
             var link = new EquipmentSoftware
@@ -25,7 +24,6 @@ namespace EquipmentAccounting.BLL.Services
             db.SaveChanges();
         }
 
-        // Получить установленное ПО
         public List<EquipmentSoftware> GetByEquipment(int equipmentId)
         {
             return db.EquipmentSoftwares
@@ -34,7 +32,6 @@ namespace EquipmentAccounting.BLL.Services
                 .ToList();
         }
 
-        // Удалить ПО
         public void Delete(int id)
         {
             var item = db.EquipmentSoftwares.Find(id);

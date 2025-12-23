@@ -37,44 +37,48 @@
             equipmentListBox = new ListBox();
             saveButton = new Button();
             softwareButton = new Button();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
             SuspendLayout();
             // 
             // typeComboBox
             // 
             typeComboBox.FormattingEnabled = true;
-            typeComboBox.Location = new Point(400, 56);
+            typeComboBox.Location = new Point(196, 30);
             typeComboBox.Name = "typeComboBox";
-            typeComboBox.Size = new Size(121, 23);
+            typeComboBox.Size = new Size(195, 23);
             typeComboBox.TabIndex = 0;
             // 
             // employeeComboBox
             // 
             employeeComboBox.FormattingEnabled = true;
-            employeeComboBox.Location = new Point(400, 85);
+            employeeComboBox.Location = new Point(196, 74);
             employeeComboBox.Name = "employeeComboBox";
-            employeeComboBox.Size = new Size(121, 23);
+            employeeComboBox.Size = new Size(195, 23);
             employeeComboBox.TabIndex = 1;
             // 
             // statusComboBox
             // 
             statusComboBox.FormattingEnabled = true;
-            statusComboBox.Location = new Point(400, 114);
+            statusComboBox.Location = new Point(196, 118);
             statusComboBox.Name = "statusComboBox";
-            statusComboBox.Size = new Size(121, 23);
+            statusComboBox.Size = new Size(195, 23);
             statusComboBox.TabIndex = 2;
             // 
             // searchTextBox
             // 
-            searchTextBox.Location = new Point(334, 198);
+            searchTextBox.Location = new Point(196, 192);
             searchTextBox.Name = "searchTextBox";
             searchTextBox.Size = new Size(121, 23);
             searchTextBox.TabIndex = 3;
+            searchTextBox.Click += searchTextBox_TextChanged;
             searchTextBox.TextChanged += searchTextBox_TextChanged;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(334, 180);
+            label1.Location = new Point(196, 174);
             label1.Name = "label1";
             label1.Size = new Size(187, 15);
             label1.TabIndex = 4;
@@ -82,9 +86,9 @@
             // 
             // searchButton
             // 
-            searchButton.Location = new Point(334, 227);
+            searchButton.Location = new Point(323, 192);
             searchButton.Name = "searchButton";
-            searchButton.Size = new Size(75, 23);
+            searchButton.Size = new Size(68, 23);
             searchButton.TabIndex = 5;
             searchButton.Text = "Найти";
             searchButton.UseVisualStyleBackColor = true;
@@ -93,14 +97,14 @@
             // equipmentListBox
             // 
             equipmentListBox.FormattingEnabled = true;
-            equipmentListBox.Location = new Point(215, 56);
+            equipmentListBox.Location = new Point(12, 12);
             equipmentListBox.Name = "equipmentListBox";
-            equipmentListBox.Size = new Size(120, 94);
+            equipmentListBox.Size = new Size(178, 244);
             equipmentListBox.TabIndex = 6;
             // 
             // saveButton
             // 
-            saveButton.Location = new Point(547, 113);
+            saveButton.Location = new Point(196, 233);
             saveButton.Name = "saveButton";
             saveButton.Size = new Size(75, 23);
             saveButton.TabIndex = 7;
@@ -110,19 +114,49 @@
             // 
             // softwareButton
             // 
-            softwareButton.Location = new Point(532, 272);
+            softwareButton.Location = new Point(277, 233);
             softwareButton.Name = "softwareButton";
-            softwareButton.Size = new Size(75, 23);
+            softwareButton.Size = new Size(114, 23);
             softwareButton.TabIndex = 8;
-            softwareButton.Text = "softwareButton";
+            softwareButton.Text = "Софт";
             softwareButton.UseVisualStyleBackColor = true;
             softwareButton.Click += softwareButton_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(196, 12);
+            label2.Name = "label2";
+            label2.Size = new Size(28, 15);
+            label2.TabIndex = 9;
+            label2.Text = "Тип";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(196, 56);
+            label3.Name = "label3";
+            label3.Size = new Size(66, 15);
+            label3.TabIndex = 10;
+            label3.Text = "Сотрудник";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(196, 100);
+            label4.Name = "label4";
+            label4.Size = new Size(43, 15);
+            label4.TabIndex = 11;
+            label4.Text = "Статус";
             // 
             // EquipmentForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(404, 267);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
             Controls.Add(softwareButton);
             Controls.Add(saveButton);
             Controls.Add(equipmentListBox);
@@ -150,5 +184,8 @@
         private ListBox equipmentListBox;
         private Button saveButton;
         private Button softwareButton;
+        private Label label2;
+        private Label label3;
+        private Label label4;
     }
 }
