@@ -73,11 +73,22 @@ namespace EquipmentAccounting.WinFormsUI
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question
             );
-
-            if (confirm == DialogResult.Yes)
+            try
             {
-                service.Delete(department.Id);
-                LoadDepartments();
+                if (confirm == DialogResult.Yes)
+                {
+                    service.Delete(department.Id);
+                    LoadDepartments();
+                }
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show(
+                   ex.Message,
+                   "Удаление запрещено",
+                   MessageBoxButtons.OK,
+                   MessageBoxIcon.Warning
+               );
             }
         }
     }

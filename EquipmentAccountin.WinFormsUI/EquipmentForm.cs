@@ -42,7 +42,7 @@ namespace EquipmentAccountin.WinFormsUI
             typeComboBox.SelectedIndex = -1;
 
             employeeComboBox.DataSource = null;
-            employeeComboBox.DataSource = employeeService.GetAll();
+            employeeComboBox.DataSource = employeeService.GetAllForGrid();
             employeeComboBox.DisplayMember = "FullName";
             employeeComboBox.ValueMember = "Id";
             employeeComboBox.SelectedIndex = -1;
@@ -107,15 +107,12 @@ namespace EquipmentAccountin.WinFormsUI
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            if (equipmentListBox.SelectedItem == null)
+            if (equipmentListBox.SelectedItem == null ||
+                employeeComboBox.SelectedItem == null ||
+                typeComboBox.SelectedValue == null ||
+                statusComboBox.SelectedValue == null)
             {
-                MessageBox.Show("Выберите оборудование");
-                return;
-            }
-
-            if (employeeComboBox.SelectedItem == null)
-            {
-                MessageBox.Show("Выберите сотрудника");
+                MessageBox.Show("Заполните все поля");
                 return;
             }
 
@@ -124,7 +121,6 @@ namespace EquipmentAccountin.WinFormsUI
             int? oldEmployeeId = equipment.EmployeeId;
             int newEmployeeId = (int)employeeComboBox.SelectedValue;
 
-            // ЕСЛИ СОТРУДНИК ПОМЕНЯЛСЯ → ПИШЕМ В ИСТОРИЮ
             if (oldEmployeeId != newEmployeeId)
             {
                 var historyService = new EquipmentHistoryService();
@@ -135,11 +131,15 @@ namespace EquipmentAccountin.WinFormsUI
                 );
             }
 
-            // ОБНОВЛЯЕМ ОБОРУДОВАНИЕ
+
             equipment.EmployeeId = newEmployeeId;
+            equipment.EquipmentTypeId = (int)typeComboBox.SelectedValue;
+            equipment.EquipmentStatusId = (int)statusComboBox.SelectedValue;
+
             equipmentService.Update(equipment);
 
             MessageBox.Show("Изменения сохранены");
+
             LoadEquipment();
         }
 

@@ -22,13 +22,13 @@ namespace EquipmentAccountin.WinFormsUI
         private void LoadEmployees()
         {
             employeesGridView.DataSource = null;
-            employeesGridView.DataSource = service.GetAll();
+            employeesGridView.DataSource = service.GetAllForGrid();
         }
 
         private void EmployeeForm_Load(object sender, EventArgs e)
         {
             employeesGridView.DataSource = null;
-            employeesGridView.DataSource = service.GetAll();
+            employeesGridView.DataSource = service.GetAllForGrid();
         }
 
         private void addButton_Click(object sender, EventArgs e)
@@ -65,18 +65,28 @@ namespace EquipmentAccountin.WinFormsUI
             if (employeesGridView.CurrentRow == null)
                 return;
 
-            var employee =
-                (Employee)employeesGridView.CurrentRow.DataBoundItem;
+            var id = (int)employeesGridView.CurrentRow.Cells["Id"].Value;
 
             if (MessageBox.Show(
-                "Удалить сотрудника?",
-                "Подтверждение",
-                MessageBoxButtons.YesNo
-            ) == DialogResult.Yes)
+                    "Удалить сотрудника?",
+                    "Подтверждение",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                service.Delete(employee.Id);
-                LoadEmployees();
+                try {
+                    service.Delete(id);
+                    LoadEmployees();
+                } catch (InvalidOperationException ex)
+                {
+                    MessageBox.Show(
+                        ex.Message,
+                        "Удаление запрещено",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                    );
+                }
             }
+
         }
 
         private void employeesGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)

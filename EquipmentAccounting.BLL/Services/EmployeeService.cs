@@ -8,12 +8,19 @@ namespace EquipmentAccounting.BLL.Services
     {
         private EquipmentDbContext db = new EquipmentDbContext();
 
-        public List<Employee> GetAll()
+        public List<object> GetAllForGrid()
         {
             return db.Employees
-                .Include(e => e.Department)
-                .ToList();
+                .Select(e => new
+                {
+                    e.Id,
+                    e.FullName,
+                    e.Position,
+                    Department = e.Department != null ? e.Department.Name : ""
+                })
+                .ToList<object>();
         }
+
 
         public void Add(Employee employee)
         {
@@ -29,6 +36,17 @@ namespace EquipmentAccounting.BLL.Services
 
         public void Delete(int id)
         {
+            bool usedInEquipment = db.Equipments.Any(e => e.EmployeeId == id);
+
+            bool usedInHistory = db.EquipmentHistories.Any(h =>
+                h.OldEmployeeId == id || h.NewEmployeeId == id
+            );
+
+            if (usedInEquipment || usedInHistory)
+                throw new InvalidOperationException(
+                    "Нельзя удалить сотрудника, так как он используется в оборудовании или истории перемещений"
+                );
+
             var emp = db.Employees.Find(id);
             if (emp != null)
             {

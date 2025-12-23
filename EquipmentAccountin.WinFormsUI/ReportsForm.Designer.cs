@@ -50,6 +50,7 @@
             reportGridView.Name = "reportGridView";
             reportGridView.Size = new Size(453, 222);
             reportGridView.TabIndex = 1;
+            reportGridView.CellContentClick += reportGridView_CellContentClick;
             // 
             // ReportsForm
             // 

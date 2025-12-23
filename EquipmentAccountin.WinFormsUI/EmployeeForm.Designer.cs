@@ -40,15 +40,15 @@
             employeesGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             employeesGridView.Location = new Point(12, 12);
             employeesGridView.Name = "employeesGridView";
-            employeesGridView.Size = new Size(390, 216);
+            employeesGridView.Size = new Size(459, 216);
             employeesGridView.TabIndex = 0;
             employeesGridView.CellContentClick += employeesGridView_CellContentClick;
             // 
             // editButton
             // 
-            editButton.Location = new Point(149, 234);
+            editButton.Location = new Point(157, 234);
             editButton.Name = "editButton";
-            editButton.Size = new Size(133, 23);
+            editButton.Size = new Size(161, 23);
             editButton.TabIndex = 2;
             editButton.Text = "Изменить";
             editButton.UseVisualStyleBackColor = true;
@@ -58,7 +58,7 @@
             // 
             addButton.Location = new Point(12, 234);
             addButton.Name = "addButton";
-            addButton.Size = new Size(131, 23);
+            addButton.Size = new Size(139, 23);
             addButton.TabIndex = 1;
             addButton.Text = "Добавить";
             addButton.UseVisualStyleBackColor = true;
@@ -66,9 +66,9 @@
             // 
             // deleteButton
             // 
-            deleteButton.Location = new Point(288, 234);
+            deleteButton.Location = new Point(324, 234);
             deleteButton.Name = "deleteButton";
-            deleteButton.Size = new Size(114, 23);
+            deleteButton.Size = new Size(147, 23);
             deleteButton.TabIndex = 3;
             deleteButton.Text = "Удалить";
             deleteButton.UseVisualStyleBackColor = true;
@@ -78,7 +78,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(415, 268);
+            ClientSize = new Size(492, 274);
             Controls.Add(deleteButton);
             Controls.Add(editButton);
             Controls.Add(addButton);

@@ -28,6 +28,13 @@ namespace EquipmentAccounting.BLL.Services
 
         public void Delete(int id)
         {
+            bool hasEmployees = db.Employees.Any(e => e.DepartmentId == id);
+
+            if (hasEmployees)
+                throw new InvalidOperationException(
+                    "Нельзя удалить подразделение, в котором есть сотрудники"
+                );
+
             var department = db.Departments.Find(id);
             if (department != null)
             {

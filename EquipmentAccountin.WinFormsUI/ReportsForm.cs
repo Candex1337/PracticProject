@@ -20,9 +20,15 @@ namespace EquipmentAccountin.WinFormsUI
         private void departmentReportButton_Click_1(object sender, EventArgs e)
         {
             reportGridView.DataSource = null;
+            reportGridView.AutoGenerateColumns = true;
             reportGridView.DataSource = reportService.GetEquipmentByDepartments();
         }
         private void ReportsForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reportGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

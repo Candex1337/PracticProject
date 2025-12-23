@@ -41,16 +41,16 @@
             departmentsGridView.Location = new Point(20, 31);
             departmentsGridView.Margin = new Padding(4, 3, 4, 3);
             departmentsGridView.Name = "departmentsGridView";
-            departmentsGridView.Size = new Size(289, 165);
+            departmentsGridView.Size = new Size(360, 165);
             departmentsGridView.TabIndex = 0;
             departmentsGridView.CellContentClick += departmentsGridView_CellContentClick;
             // 
             // addButton
             // 
-            addButton.Location = new Point(13, 202);
+            addButton.Location = new Point(20, 202);
             addButton.Margin = new Padding(4, 3, 4, 3);
             addButton.Name = "addButton";
-            addButton.Size = new Size(88, 27);
+            addButton.Size = new Size(105, 27);
             addButton.TabIndex = 1;
             addButton.Text = "Добавить";
             addButton.UseVisualStyleBackColor = true;
@@ -58,10 +58,10 @@
             // 
             // editButton
             // 
-            editButton.Location = new Point(109, 202);
+            editButton.Location = new Point(133, 202);
             editButton.Margin = new Padding(4, 3, 4, 3);
             editButton.Name = "editButton";
-            editButton.Size = new Size(104, 27);
+            editButton.Size = new Size(125, 27);
             editButton.TabIndex = 2;
             editButton.Text = "Изменить";
             editButton.UseVisualStyleBackColor = true;
@@ -69,10 +69,10 @@
             // 
             // deleteButton
             // 
-            deleteButton.Location = new Point(221, 202);
+            deleteButton.Location = new Point(266, 202);
             deleteButton.Margin = new Padding(4, 3, 4, 3);
             deleteButton.Name = "deleteButton";
-            deleteButton.Size = new Size(88, 27);
+            deleteButton.Size = new Size(114, 27);
             deleteButton.TabIndex = 3;
             deleteButton.Text = "Удалить";
             deleteButton.UseVisualStyleBackColor = true;
@@ -82,7 +82,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(335, 250);
+            ClientSize = new Size(488, 320);
             Controls.Add(deleteButton);
             Controls.Add(editButton);
             Controls.Add(addButton);

@@ -1,5 +1,6 @@
-﻿using System.Linq;
-using EquipmentAccounting.DAL.Data;
+﻿using EquipmentAccounting.DAL.Data;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace EquipmentAccounting.BLL.Services
 {
@@ -10,13 +11,17 @@ namespace EquipmentAccounting.BLL.Services
         public object GetEquipmentByDepartments()
         {
             return db.Equipments
-                .Select(e => new
-                {
-                    Department = e.Department.Name,
-                    InventoryNumber = e.InventoryNumber,
-                    EquipmentName = e.Name
-                })
-                .ToList();
+            .Include(e => e.Employee)
+                .ThenInclude(emp => emp.Department)
+            .Select(e => new
+            {
+                Department = e.Employee != null && e.Employee.Department != null
+                    ? e.Employee.Department.Name
+                    : "—",
+                InventoryNumber = e.InventoryNumber,
+                EquipmentName = e.Name
+            })
+            .ToList();
         }
     }
 }
