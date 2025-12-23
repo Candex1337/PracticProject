@@ -47,8 +47,9 @@ namespace EquipmentAccountin.WinFormsUI
             if (employeesGridView.CurrentRow == null)
                 return;
 
-            var employee =
-                (Employee)employeesGridView.CurrentRow.DataBoundItem;
+            int id = (int)employeesGridView.CurrentRow.Cells["Id"].Value;
+
+            var employee = service.GetById(id);
 
             var editForm = new EmployeeEditForm();
             editForm.Employee = employee;
@@ -59,6 +60,7 @@ namespace EquipmentAccountin.WinFormsUI
                 LoadEmployees();
             }
         }
+
 
         private void deleteButton_Click(object sender, EventArgs e)
         {

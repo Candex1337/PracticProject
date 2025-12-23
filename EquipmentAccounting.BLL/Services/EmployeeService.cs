@@ -21,7 +21,10 @@ namespace EquipmentAccounting.BLL.Services
                 .ToList<object>();
         }
 
-
+        public Employee GetById(int id)
+        {
+            return db.Employees.Find(id);
+        }
         public void Add(Employee employee)
         {
             db.Employees.Add(employee);
