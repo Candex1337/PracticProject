@@ -21,7 +21,7 @@ namespace EquipmentAccounting.WinFormsUI
 
         private void navigationListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+
         }
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -60,6 +60,11 @@ namespace EquipmentAccounting.WinFormsUI
         private void MainForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
