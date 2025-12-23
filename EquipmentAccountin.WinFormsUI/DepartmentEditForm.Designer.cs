@@ -31,7 +31,7 @@
             tableLayoutPanel1 = new TableLayoutPanel();
             nameTextBox = new TextBox();
             button2 = new Button();
-            button1 = new Button();
+            cancelButton = new Button();
             label1 = new Label();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
@@ -43,15 +43,16 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 51.6923065F));
             tableLayoutPanel1.Controls.Add(nameTextBox, 1, 0);
             tableLayoutPanel1.Controls.Add(button2, 0, 1);
-            tableLayoutPanel1.Controls.Add(button1, 1, 1);
+            tableLayoutPanel1.Controls.Add(cancelButton, 1, 1);
             tableLayoutPanel1.Controls.Add(label1, 0, 0);
-            tableLayoutPanel1.Location = new Point(322, 184);
+            tableLayoutPanel1.Location = new Point(12, 12);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 2;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.Size = new Size(325, 64);
             tableLayoutPanel1.TabIndex = 0;
+            tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
             // 
             // nameTextBox
             // 
@@ -74,17 +75,19 @@
             button2.Text = "Сохранить";
             button2.TextImageRelation = TextImageRelation.ImageBeforeText;
             button2.UseVisualStyleBackColor = true;
+            button2.Click += saveButton_Click;
             // 
-            // button1
+            // cancelButton
             // 
-            button1.Anchor = AnchorStyles.Right;
-            button1.AutoSize = true;
-            button1.Location = new Point(160, 35);
-            button1.Name = "button1";
-            button1.Size = new Size(162, 25);
-            button1.TabIndex = 1;
-            button1.Text = "Отмена";
-            button1.UseVisualStyleBackColor = true;
+            cancelButton.Anchor = AnchorStyles.Right;
+            cancelButton.AutoSize = true;
+            cancelButton.Location = new Point(160, 35);
+            cancelButton.Name = "cancelButton";
+            cancelButton.Size = new Size(162, 25);
+            cancelButton.TabIndex = 1;
+            cancelButton.Text = "Отмена";
+            cancelButton.UseVisualStyleBackColor = true;
+            cancelButton.Click += cancelButton_Click;
             // 
             // label1
             // 
@@ -101,7 +104,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(933, 519);
+            ClientSize = new Size(359, 89);
             Controls.Add(tableLayoutPanel1);
             Margin = new Padding(4, 3, 4, 3);
             Name = "DepartmentEditForm";
@@ -117,7 +120,7 @@
 
         private TableLayoutPanel tableLayoutPanel1;
         private Button button2;
-        private Button button1;
+        private Button cancelButton;
         private Label label1;
         private TextBox nameTextBox;
     }

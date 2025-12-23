@@ -24,7 +24,6 @@ namespace EquipmentAccounting.WinFormsUI
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            // 🔴 ВАЛИДАЦИЯ
             if (string.IsNullOrWhiteSpace(nameTextBox.Text))
             {
                 MessageBox.Show(
@@ -45,6 +44,16 @@ namespace EquipmentAccounting.WinFormsUI
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

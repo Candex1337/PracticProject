@@ -48,6 +48,12 @@ namespace EquipmentAccounting.WinFormsUI
                 case "Оборудование":
                     new EquipmentForm().ShowDialog();
                     break;
+                case "История":
+                    new HistoryForm().ShowDialog();
+                    break;
+                case "Отчёты":
+                    new ReportsForm().ShowDialog();
+                    break;
             }
         }
 

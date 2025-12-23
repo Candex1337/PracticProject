@@ -46,7 +46,7 @@
             // 
             // addButton
             // 
-            addButton.Location = new Point(136, 135);
+            addButton.Location = new Point(241, 107);
             addButton.Name = "addButton";
             addButton.Size = new Size(75, 23);
             addButton.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             // editButton
             // 
-            editButton.Location = new Point(136, 174);
+            editButton.Location = new Point(241, 136);
             editButton.Name = "editButton";
             editButton.Size = new Size(75, 23);
             editButton.TabIndex = 2;
@@ -64,7 +64,7 @@
             // 
             // deleteButton
             // 
-            deleteButton.Location = new Point(136, 94);
+            deleteButton.Location = new Point(241, 78);
             deleteButton.Name = "deleteButton";
             deleteButton.Size = new Size(75, 23);
             deleteButton.TabIndex = 3;
@@ -75,7 +75,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(378, 300);
             Controls.Add(deleteButton);
             Controls.Add(editButton);
             Controls.Add(addButton);

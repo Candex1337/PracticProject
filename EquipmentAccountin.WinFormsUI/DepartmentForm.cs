@@ -53,5 +53,10 @@ namespace EquipmentAccounting.WinFormsUI
                 LoadDepartments();
             }
         }
+
+        private void departmentsGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

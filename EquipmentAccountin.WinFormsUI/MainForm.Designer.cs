@@ -62,7 +62,7 @@
             // navigationListBox
             // 
             navigationListBox.FormattingEnabled = true;
-            navigationListBox.Items.AddRange(new object[] { "Подразделения", "Сотрудники", "Оборудование" });
+            navigationListBox.Items.AddRange(new object[] { "Подразделения", "Сотрудники", "Оборудование", "История", "Отчёты" });
             navigationListBox.Location = new Point(14, 70);
             navigationListBox.Margin = new Padding(4, 3, 4, 3);
             navigationListBox.Name = "navigationListBox";

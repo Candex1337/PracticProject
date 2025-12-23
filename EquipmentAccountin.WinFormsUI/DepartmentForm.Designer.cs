@@ -43,30 +43,33 @@
             departmentsGridView.Name = "departmentsGridView";
             departmentsGridView.Size = new Size(233, 165);
             departmentsGridView.TabIndex = 0;
+            departmentsGridView.CellContentClick += departmentsGridView_CellContentClick;
             // 
             // addButton
             // 
-            addButton.Location = new Point(90, 47);
+            addButton.Location = new Point(261, 31);
             addButton.Margin = new Padding(4, 3, 4, 3);
             addButton.Name = "addButton";
             addButton.Size = new Size(88, 27);
             addButton.TabIndex = 1;
             addButton.Text = "Добавить";
             addButton.UseVisualStyleBackColor = true;
+            addButton.Click += addButton_Click;
             // 
             // editButton
             // 
-            editButton.Location = new Point(90, 103);
+            editButton.Location = new Point(261, 64);
             editButton.Margin = new Padding(4, 3, 4, 3);
             editButton.Name = "editButton";
             editButton.Size = new Size(88, 27);
             editButton.TabIndex = 2;
             editButton.Text = "Изменить";
             editButton.UseVisualStyleBackColor = true;
+            editButton.Click += editButton_Click;
             // 
             // deleteButton
             // 
-            deleteButton.Location = new Point(90, 151);
+            deleteButton.Location = new Point(261, 97);
             deleteButton.Margin = new Padding(4, 3, 4, 3);
             deleteButton.Name = "deleteButton";
             deleteButton.Size = new Size(88, 27);
@@ -78,7 +81,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(933, 519);
+            ClientSize = new Size(448, 314);
             Controls.Add(deleteButton);
             Controls.Add(editButton);
             Controls.Add(addButton);

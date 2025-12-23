@@ -10,8 +10,11 @@ namespace EquipmentAccounting.DAL.Data
         public DbSet<Employee> Employees { get; set; }
         public DbSet<EquipmentType> EquipmentTypes { get; set; }
         public DbSet<Equipment> Equipments { get; set; }
-
+        public DbSet<EquipmentHistory> EquipmentHistories { get; set; }
         public DbSet<EquipmentStatus> EquipmentStatuses { get; set; }
+        public DbSet<SoftwareLicense> SoftwareLicenses { get; set; }
+        public DbSet<EquipmentSoftware> EquipmentSoftwares { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using EquipmentAccounting.DAL.Data;
+﻿using EquipmentAccounting.DAL.Data;
 using EquipmentAccounting.DAL.Entities;
 
 namespace EquipmentAccounting.BLL.Services
