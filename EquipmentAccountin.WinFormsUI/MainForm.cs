@@ -44,11 +44,10 @@ namespace EquipmentAccounting.WinFormsUI
                 case "Сотрудники":
                     new EmployeeForm().ShowDialog();
                     break;
-
                 case "Оборудование":
                     new EquipmentForm().ShowDialog();
                     break;
-                case "История":
+                case "История перемещений":
                     new HistoryForm().ShowDialog();
                     break;
                 case "Отчёты":

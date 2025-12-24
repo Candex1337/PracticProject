@@ -11,26 +11,49 @@ namespace EquipmentAccountin.WinFormsUI
 {
     public partial class ReportsForm : Form
     {
-        private ReportService reportService;
+        private readonly ReportService reportService;
+        private readonly EmployeeService employeeService;
+
         public ReportsForm()
         {
             InitializeComponent();
             reportService = new ReportService();
+            employeeService = new EmployeeService();
         }
-        private void departmentReportButton_Click_1(object sender, EventArgs e)
-        {
-            reportGridView.DataSource = null;
-            reportGridView.AutoGenerateColumns = true;
-            reportGridView.DataSource = reportService.GetEquipmentByDepartments();
-        }
+
         private void ReportsForm_Load(object sender, EventArgs e)
         {
-
+            employeeComboBox.DataSource = employeeService.GetAll();
+            employeeComboBox.DisplayMember = "FullName";
+            employeeComboBox.ValueMember = "Id";
+            employeeComboBox.SelectedIndex = -1;
         }
 
-        private void reportGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void softwareByEmployeeButton_Click(object sender, EventArgs e)
+        {
+            if (employeeComboBox.SelectedItem == null)
+            {
+                MessageBox.Show("Выберите сотрудника");
+                return;
+            }
+
+            int employeeId = (int)employeeComboBox.SelectedValue;
+
+            reportGridView.DataSource = null;
+            reportGridView.DataSource =
+                reportService.GetSoftwareByEmployee(employeeId);
+        }
+
+        private void departmentReportButton_Click(object sender, EventArgs e)
+        {
+            reportGridView.DataSource = null;
+            reportGridView.DataSource = reportService.GetEquipmentByDepartments();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
     }
+
 }

@@ -12,6 +12,7 @@ namespace EquipmentAccountin.WinFormsUI
 {
     public partial class EmployeeEditForm : Form
     {
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Employee Employee { get; set; }
 
         private DepartmentService departmentService = new DepartmentService();

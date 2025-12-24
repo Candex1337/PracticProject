@@ -21,6 +21,12 @@ namespace EquipmentAccounting.BLL.Services
                 .ToList<object>();
         }
 
+        public List<Employee> GetAll()
+        {
+            return db.Employees.ToList();
+        }
+
+
         public Employee GetById(int id)
         {
             return db.Employees.Find(id);

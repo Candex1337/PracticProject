@@ -14,8 +14,6 @@ namespace EquipmentAccounting.DAL.Data
         public DbSet<EquipmentStatus> EquipmentStatuses { get; set; }
         public DbSet<SoftwareLicense> SoftwareLicenses { get; set; }
         public DbSet<EquipmentSoftware> EquipmentSoftwares { get; set; }
-
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;

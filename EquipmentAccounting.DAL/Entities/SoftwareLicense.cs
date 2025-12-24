@@ -9,5 +9,7 @@ namespace EquipmentAccounting.DAL.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public string LicenseKey { get; set; }
+        public ICollection<EquipmentSoftware> EquipmentSoftwares { get; set; }
+           = new List<EquipmentSoftware>();
     }
 }

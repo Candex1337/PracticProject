@@ -8,20 +8,39 @@ namespace EquipmentAccounting.BLL.Services
     {
         private EquipmentDbContext db = new EquipmentDbContext();
 
-        public object GetEquipmentByDepartments()
+        public object GetSoftwareByEmployee(int employeeId)
         {
             return db.Equipments
-            .Include(e => e.Employee)
+                .Where(e => e.EmployeeId == employeeId)
+                .Include(e => e.Employee)
+                .Include(e => e.EquipmentSoftwares)
+                    .ThenInclude(es => es.SoftwareLicense)
+                .SelectMany(e => e.EquipmentSoftwares.Select(es => new
+                {
+                    Employee = e.Employee.FullName,
+                    InventoryNumber = e.InventoryNumber,
+                    EquipmentName = e.Name,
+                    SoftwareName = es.SoftwareLicense.Name,
+                    InstallDate = es.InstallDate
+                }))
+                .ToList();
+        }
+
+        public List<object> GetEquipmentByDepartments()
+        {
+            return db.Equipments
+                .Include(e => e.Employee)
                 .ThenInclude(emp => emp.Department)
-            .Select(e => new
-            {
-                Department = e.Employee != null && e.Employee.Department != null
-                    ? e.Employee.Department.Name
-                    : "—",
-                InventoryNumber = e.InventoryNumber,
-                EquipmentName = e.Name
-            })
-            .ToList();
+                .Select(e => new
+                {
+                    Department = e.Employee != null && e.Employee.Department != null
+                        ? e.Employee.Department.Name
+                        : "—",
+
+                    InventoryNumber = e.InventoryNumber,
+                    EquipmentName = e.Name
+                })
+                .ToList<object>();
         }
     }
 }

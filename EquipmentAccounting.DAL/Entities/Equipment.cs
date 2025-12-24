@@ -15,5 +15,6 @@
         public Employee Employee { get; set; }
         public string SerialNumber { get; set; }
         public DateTime? InstallDate { get; set; }
+        public ICollection<EquipmentSoftware> EquipmentSoftwares { get; set; } = new List<EquipmentSoftware>();
     }
 }

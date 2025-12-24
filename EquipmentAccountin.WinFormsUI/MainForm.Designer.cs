@@ -39,7 +39,7 @@
             // navigationListBox
             // 
             navigationListBox.FormattingEnabled = true;
-            navigationListBox.Items.AddRange(new object[] { "Подразделения", "Сотрудники", "Оборудование", "История", "Отчёты" });
+            navigationListBox.Items.AddRange(new object[] { "Подразделения", "Сотрудники", "Оборудование", "Учёт ПО", "История перемещений", "Отчёты" });
             navigationListBox.Location = new Point(12, 85);
             navigationListBox.Margin = new Padding(4, 3, 4, 3);
             navigationListBox.Name = "navigationListBox";
@@ -76,7 +76,7 @@
             // выходToolStripMenuItem
             // 
             выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            выходToolStripMenuItem.Size = new Size(180, 22);
+            выходToolStripMenuItem.Size = new Size(108, 22);
             выходToolStripMenuItem.Text = "Выход";
             выходToolStripMenuItem.Click += выходToolStripMenuItem_Click;
             // 

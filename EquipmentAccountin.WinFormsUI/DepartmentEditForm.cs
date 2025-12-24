@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Windows.Forms;
 using EquipmentAccounting.DAL.Entities;
+using System.ComponentModel;
 
 namespace EquipmentAccounting.WinFormsUI
 {
     public partial class DepartmentEditForm : Form
     {
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Department Department { get; set; }
 
         public DepartmentEditForm()
