@@ -21,5 +21,10 @@ namespace EquipmentAccountin.WinFormsUI
         {
             historyGridView.DataSource = historyService.GetAll();
         }
+
+        private void historyGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

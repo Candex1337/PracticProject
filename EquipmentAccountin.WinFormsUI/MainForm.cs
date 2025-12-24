@@ -40,9 +40,11 @@ namespace EquipmentAccounting.WinFormsUI
                 case "Подразделения":
                     new DepartmentForm().ShowDialog();
                     break;
-
                 case "Сотрудники":
                     new EmployeeForm().ShowDialog();
+                    break;
+                case "Типы оборудования":
+                    new EquipmentTypeForm().ShowDialog();
                     break;
                 case "Оборудование":
                     new EquipmentForm().ShowDialog();
@@ -50,6 +52,10 @@ namespace EquipmentAccounting.WinFormsUI
                 case "История перемещений":
                     new HistoryForm().ShowDialog();
                     break;
+                case "Лицензии ПО":
+                    new SoftwareLicenseForm().ShowDialog();
+                    break;
+
                 case "Отчёты":
                     new ReportsForm().ShowDialog();
                     break;

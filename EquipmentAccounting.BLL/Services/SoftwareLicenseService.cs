@@ -14,5 +14,19 @@ namespace EquipmentAccounting.BLL.Services
         {
             return db.SoftwareLicenses.ToList();
         }
+        public void Add(SoftwareLicense license)
+        {
+            db.SoftwareLicenses.Add(license);
+            db.SaveChanges();
+        }
+        public void Delete(int id)
+        {
+            var license = db.SoftwareLicenses.FirstOrDefault(l => l.Id == id);
+            if (license == null)
+                return;
+
+            db.SoftwareLicenses.Remove(license);
+            db.SaveChanges();
+        }
     }
 }

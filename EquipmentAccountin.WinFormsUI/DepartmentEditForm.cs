@@ -62,5 +62,10 @@ namespace EquipmentAccounting.WinFormsUI
         {
 
         }
+
+        private void headTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

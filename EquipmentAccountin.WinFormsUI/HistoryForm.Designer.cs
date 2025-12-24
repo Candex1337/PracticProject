@@ -40,6 +40,7 @@
             historyGridView.Name = "historyGridView";
             historyGridView.Size = new Size(548, 525);
             historyGridView.TabIndex = 0;
+            historyGridView.CellContentClick += historyGridView_CellContentClick;
             // 
             // label1
             // 

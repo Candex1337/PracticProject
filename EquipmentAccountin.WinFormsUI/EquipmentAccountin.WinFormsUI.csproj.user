@@ -19,6 +19,12 @@
     <Compile Update="EquipmentSoftwareForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="EquipmentTypeEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EquipmentTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="HistoryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -26,6 +32,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SoftwareLicenseEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SoftwareLicenseForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
