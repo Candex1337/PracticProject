@@ -29,32 +29,46 @@
         private void InitializeComponent()
         {
             historyGridView = new DataGridView();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)historyGridView).BeginInit();
             SuspendLayout();
             // 
             // historyGridView
             // 
             historyGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            historyGridView.Location = new Point(12, 12);
+            historyGridView.Location = new Point(12, 50);
             historyGridView.Name = "historyGridView";
-            historyGridView.Size = new Size(694, 291);
+            historyGridView.Size = new Size(548, 525);
             historyGridView.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label1.Location = new Point(12, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(215, 25);
+            label1.TabIndex = 1;
+            label1.Text = "История перемещений";
             // 
             // HistoryForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(716, 314);
+            ClientSize = new Size(576, 587);
+            Controls.Add(label1);
             Controls.Add(historyGridView);
             Name = "HistoryForm";
             Text = "HistoryForm";
             Load += HistoryForm_Load;
             ((System.ComponentModel.ISupportInitialize)historyGridView).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private DataGridView historyGridView;
+        private Label label1;
     }
 }

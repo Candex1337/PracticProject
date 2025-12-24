@@ -8,35 +8,30 @@ namespace EquipmentAccounting.BLL.Services
     {
         private EquipmentDbContext db = new EquipmentDbContext();
 
-        public object GetSoftwareByEmployee(int employeeId)
+        public List<object> GetSoftwareByEmployee(int employeeId)
         {
-            return db.Equipments
-                .Where(e => e.EmployeeId == employeeId)
-                .Include(e => e.Employee)
-                .Include(e => e.EquipmentSoftwares)
-                    .ThenInclude(es => es.SoftwareLicense)
-                .SelectMany(e => e.EquipmentSoftwares.Select(es => new
+            return db.EquipmentSoftwares
+                .Where(es => es.Equipment.EmployeeId == employeeId)
+                .Select(es => new
                 {
-                    Employee = e.Employee.FullName,
-                    InventoryNumber = e.InventoryNumber,
-                    EquipmentName = e.Name,
+                    Employee = es.Equipment.Employee.FullName,
+                    InventoryNumber = es.Equipment.InventoryNumber,
+                    EquipmentName = es.Equipment.Name,
                     SoftwareName = es.SoftwareLicense.Name,
                     InstallDate = es.InstallDate
-                }))
-                .ToList();
+                })
+                .ToList<object>();
         }
 
         public List<object> GetEquipmentByDepartments()
         {
             return db.Equipments
-                .Include(e => e.Employee)
-                .ThenInclude(emp => emp.Department)
                 .Select(e => new
                 {
-                    Department = e.Employee != null && e.Employee.Department != null
-                        ? e.Employee.Department.Name
-                        : "—",
-
+                    Department =
+                        e.Employee != null && e.Employee.Department != null
+                            ? e.Employee.Department.Name
+                            : "—",
                     InventoryNumber = e.InventoryNumber,
                     EquipmentName = e.Name
                 })

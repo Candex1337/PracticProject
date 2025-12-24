@@ -38,12 +38,13 @@
             // 
             // navigationListBox
             // 
+            navigationListBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
             navigationListBox.FormattingEnabled = true;
-            navigationListBox.Items.AddRange(new object[] { "Подразделения", "Сотрудники", "Оборудование", "Учёт ПО", "История перемещений", "Отчёты" });
+            navigationListBox.Items.AddRange(new object[] { "Подразделения", "Сотрудники", "Оборудование", "История перемещений", "Отчёты" });
             navigationListBox.Location = new Point(12, 85);
             navigationListBox.Margin = new Padding(4, 3, 4, 3);
             navigationListBox.Name = "navigationListBox";
-            navigationListBox.Size = new Size(204, 109);
+            navigationListBox.Size = new Size(214, 109);
             navigationListBox.TabIndex = 1;
             navigationListBox.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
@@ -62,7 +63,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { файлToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(302, 24);
+            menuStrip1.Size = new Size(242, 24);
             menuStrip1.TabIndex = 3;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -76,7 +77,7 @@
             // выходToolStripMenuItem
             // 
             выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            выходToolStripMenuItem.Size = new Size(108, 22);
+            выходToolStripMenuItem.Size = new Size(180, 22);
             выходToolStripMenuItem.Text = "Выход";
             выходToolStripMenuItem.Click += выходToolStripMenuItem_Click;
             // 
@@ -84,7 +85,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(302, 206);
+            ClientSize = new Size(242, 227);
             Controls.Add(label1);
             Controls.Add(navigationListBox);
             Controls.Add(menuStrip1);

@@ -51,7 +51,7 @@
             reportGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             reportGridView.Location = new Point(231, 31);
             reportGridView.Name = "reportGridView";
-            reportGridView.Size = new Size(453, 222);
+            reportGridView.Size = new Size(556, 222);
             reportGridView.TabIndex = 1;
             // 
             // softwareByEmployeeButton
@@ -86,7 +86,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(697, 268);
+            ClientSize = new Size(799, 269);
             Controls.Add(label1);
             Controls.Add(employeeComboBox);
             Controls.Add(softwareByEmployeeButton);
