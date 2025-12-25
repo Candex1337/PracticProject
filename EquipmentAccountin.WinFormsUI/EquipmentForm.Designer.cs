@@ -101,6 +101,7 @@
             equipmentListBox.Name = "equipmentListBox";
             equipmentListBox.Size = new Size(178, 244);
             equipmentListBox.TabIndex = 6;
+            equipmentListBox.SelectedIndexChanged += equipmentListBox_SelectedIndexChanged;
             // 
             // saveButton
             // 

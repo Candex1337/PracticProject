@@ -27,10 +27,11 @@ namespace EquipmentAccounting.WinFormsUI
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(nameTextBox.Text))
+            if (string.IsNullOrWhiteSpace(nameTextBox.Text) ||
+                string.IsNullOrWhiteSpace(headTextBox.Text))
             {
                 MessageBox.Show(
-                    "Поле 'Название' не может быть пустым",
+                    "Поле 'Название' или 'Руководитель' не может быть пустым",
                     "Ошибка",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning

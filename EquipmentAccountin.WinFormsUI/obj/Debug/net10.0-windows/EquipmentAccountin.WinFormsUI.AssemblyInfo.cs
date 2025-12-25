@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EquipmentAccountin.WinFormsUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83817b43b7168a8385741fb28609e61bc6d5c667")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1cf46efbf52b2741773f9c6678eb99545d348829")]
 [assembly: System.Reflection.AssemblyProductAttribute("EquipmentAccountin.WinFormsUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EquipmentAccountin.WinFormsUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

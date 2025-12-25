@@ -157,5 +157,9 @@ namespace EquipmentAccountin.WinFormsUI
             form.ShowDialog();
         }
 
+        private void equipmentListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
