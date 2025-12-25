@@ -15,3 +15,5 @@ C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.BLL\obj\Debug\net
 C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.BLL\obj\Debug\net10.0\refint\EquipmentAccounting.BLL.dll
 C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.BLL\obj\Debug\net10.0\EquipmentAccounting.BLL.pdb
 C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.BLL\obj\Debug\net10.0\ref\EquipmentAccounting.BLL.dll
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.BLL\bin\Debug\net10.0\EquipmentAccounting.BLL.runtimeconfig.json
+C:\Users\cande\source\repos\PracticProject\EquipmentAccounting.BLL\obj\Debug\net10.0\EquipmentAccounting.BLL.genruntimeconfig.cache
