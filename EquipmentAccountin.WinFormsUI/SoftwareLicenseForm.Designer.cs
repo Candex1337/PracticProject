@@ -36,9 +36,9 @@
             // 
             // deleteButton
             // 
-            deleteButton.Location = new Point(223, 234);
+            deleteButton.Location = new Point(181, 234);
             deleteButton.Name = "deleteButton";
-            deleteButton.Size = new Size(204, 23);
+            deleteButton.Size = new Size(194, 23);
             deleteButton.TabIndex = 7;
             deleteButton.Text = "Удалить";
             deleteButton.UseVisualStyleBackColor = true;
@@ -48,7 +48,7 @@
             // 
             addButton.Location = new Point(12, 234);
             addButton.Name = "addButton";
-            addButton.Size = new Size(205, 23);
+            addButton.Size = new Size(163, 23);
             addButton.TabIndex = 5;
             addButton.Text = "Добавить";
             addButton.UseVisualStyleBackColor = true;
@@ -59,7 +59,7 @@
             licensesGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             licensesGridView.Location = new Point(12, 12);
             licensesGridView.Name = "licensesGridView";
-            licensesGridView.Size = new Size(415, 216);
+            licensesGridView.Size = new Size(363, 216);
             licensesGridView.TabIndex = 8;
             licensesGridView.CellContentClick += licensesGridView_CellContentClick;
             // 
@@ -67,7 +67,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(457, 276);
+            ClientSize = new Size(394, 276);
             Controls.Add(licensesGridView);
             Controls.Add(deleteButton);
             Controls.Add(addButton);
