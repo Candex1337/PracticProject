@@ -21,6 +21,14 @@ namespace EquipmentAccounting.BLL.Services
         }
         public void Delete(int id)
         {
+
+            if (db.EquipmentSoftwares.Any(es => es.SoftwareLicenseId == id))
+            {
+                throw new InvalidOperationException(
+                    "Нельзя удалить лицензию, так как она используется оборудованием"
+                );
+            }
+
             var license = db.SoftwareLicenses.FirstOrDefault(l => l.Id == id);
             if (license == null)
                 return;

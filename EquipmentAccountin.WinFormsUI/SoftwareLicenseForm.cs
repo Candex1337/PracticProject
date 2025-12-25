@@ -58,8 +58,20 @@ namespace EquipmentAccountin.WinFormsUI
                 "Подтверждение",
                 MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                service.Delete(license.Id);
-                LoadLicenses();
+                try
+                {
+                    service.Delete(license.Id);
+                    LoadLicenses();
+                }
+                catch (InvalidOperationException ex)
+                {
+                    MessageBox.Show(
+                        ex.Message,
+                        "Удаление невозможно",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                    );
+                }
             }
         }
 
