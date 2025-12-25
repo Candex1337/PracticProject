@@ -19,33 +19,10 @@ namespace EquipmentAccounting.BLL.Services
             return db.Equipments.ToList();
         }
 
-        public void Add(Equipment equipment)
-        {
-            db.Equipments.Add(equipment);
-            db.SaveChanges();
-        }
-
         public void Update(Equipment equipment)
         {
             db.Equipments.Update(equipment);
             db.SaveChanges();
         }
-
-        public void Delete(int id)
-        {
-            var equipment = db.Equipments.Find(id);
-            if (equipment != null)
-            {
-                db.Equipments.Remove(equipment);
-                db.SaveChanges();
-            }
-        }
-
-        public Equipment FindByInventoryNumber(string inventoryNumber)
-        {
-            return db.Equipments
-                .FirstOrDefault(e => e.InventoryNumber == inventoryNumber);
-        }
-
     }
 }
