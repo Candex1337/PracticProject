@@ -161,5 +161,68 @@ namespace EquipmentAccountin.WinFormsUI
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            if (typeComboBox.SelectedValue == null)
+            {
+                MessageBox.Show("Выберите тип оборудования");
+                return;
+            }
+
+            if (statusComboBox.SelectedValue == null)
+            {
+                MessageBox.Show("Выберите статус оборудования");
+                return;
+            }
+
+            var equipment = new Equipment
+            {
+                Name = "Новое оборудование",
+                EquipmentTypeId = (int)typeComboBox.SelectedValue,
+                EquipmentStatusId = (int)statusComboBox.SelectedValue,
+                EmployeeId = employeeComboBox.SelectedValue as int?
+            };
+
+            equipmentService.Add(equipment);
+            LoadEquipment();
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            if (equipmentListBox.SelectedItem == null)
+            {
+                MessageBox.Show("Выберите оборудование");
+                return;
+            }
+
+            var equipment = (Equipment)equipmentListBox.SelectedItem;
+
+            if (MessageBox.Show(
+                $"Удалить оборудование {equipment.InventoryNumber}?",
+                "Подтверждение",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                try {
+                    equipmentService.Delete(equipment.Id);
+                    LoadEquipment();
+                }
+                catch (InvalidOperationException ex)
+                {
+                    MessageBox.Show(
+                        ex.Message,
+                        "Ошибка удаления",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                    );
+                }
+            }
+        }
     }
 }

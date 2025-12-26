@@ -40,6 +40,8 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            addButton = new Button();
+            deleteButton = new Button();
             SuspendLayout();
             // 
             // typeComboBox
@@ -83,6 +85,7 @@
             label1.Size = new Size(187, 15);
             label1.TabIndex = 4;
             label1.Text = "Поиск по инвентарному номеру";
+            label1.Click += label1_Click;
             // 
             // searchButton
             // 
@@ -99,7 +102,7 @@
             equipmentListBox.FormattingEnabled = true;
             equipmentListBox.Location = new Point(12, 12);
             equipmentListBox.Name = "equipmentListBox";
-            equipmentListBox.Size = new Size(178, 244);
+            equipmentListBox.Size = new Size(178, 214);
             equipmentListBox.TabIndex = 6;
             equipmentListBox.SelectedIndexChanged += equipmentListBox_SelectedIndexChanged;
             // 
@@ -150,11 +153,33 @@
             label4.TabIndex = 11;
             label4.Text = "Статус";
             // 
+            // addButton
+            // 
+            addButton.Location = new Point(12, 232);
+            addButton.Name = "addButton";
+            addButton.Size = new Size(85, 23);
+            addButton.TabIndex = 12;
+            addButton.Text = "Добавить";
+            addButton.UseVisualStyleBackColor = true;
+            addButton.Click += addButton_Click;
+            // 
+            // deleteButton
+            // 
+            deleteButton.Location = new Point(103, 233);
+            deleteButton.Name = "deleteButton";
+            deleteButton.Size = new Size(87, 23);
+            deleteButton.TabIndex = 13;
+            deleteButton.Text = "Удалить";
+            deleteButton.UseVisualStyleBackColor = true;
+            deleteButton.Click += deleteButton_Click;
+            // 
             // EquipmentForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(404, 267);
+            Controls.Add(deleteButton);
+            Controls.Add(addButton);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -188,5 +213,7 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private Button addButton;
+        private Button deleteButton;
     }
 }
