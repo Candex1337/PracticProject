@@ -154,3 +154,8 @@ C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\obj\Deb
 C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\obj\Debug\net9.0-windows\EquipmentAccountin.WinFormsUI.pdb
 C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\obj\Debug\net9.0-windows\EquipmentAccountin.WinFormsUI.genruntimeconfig.cache
 C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\obj\Debug\net9.0-windows\ref\EquipmentAccountin.WinFormsUI.dll
+C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\bin\Debug\net9.0-windows\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\bin\Debug\net9.0-windows\xunit.abstractions.dll
+C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\bin\Debug\net9.0-windows\xunit.assert.dll
+C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\bin\Debug\net9.0-windows\xunit.core.dll
+C:\Users\cande\source\repos\PracticProject\EquipmentAccountin.WinFormsUI\bin\Debug\net9.0-windows\xunit.execution.dotnet.dll

@@ -3,6 +3,7 @@
     <File Path=".gitignore" />
   </Folder>
   <Project Path="EquipmentAccountin.WinFormsUI/EquipmentAccountin.WinFormsUI.csproj" Id="5fa65d87-fb7b-4dd5-b4bc-e64972d36da4" />
+  <Project Path="EquipmentAccounting.BLL.UnitTests/EquipmentAccounting.BLL.UnitTests.csproj" Id="360c2e61-f572-4373-806b-e970ab876594" />
   <Project Path="EquipmentAccounting.BLL/EquipmentAccounting.BLL.csproj" Id="0dded551-72ea-4418-8270-de046ed5d0ef" />
   <Project Path="EquipmentAccounting.DAL/EquipmentAccounting.DAL.csproj" />
 </Solution>

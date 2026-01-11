@@ -13,6 +13,10 @@ namespace EquipmentAccounting.BLL.Services
         {
             db = new EquipmentDbContext();
         }
+        public EquipmentService(EquipmentDbContext context)
+        {
+            db = context;
+        }
 
         public List<Equipment> GetAll()
         {

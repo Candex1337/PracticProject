@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EquipmentAccounting.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a031be281d633f5a3980f0bb5c0a448fc4a17674")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23be3d8b896fe345abb6e6641ce64ee674139817")]
 [assembly: System.Reflection.AssemblyProductAttribute("EquipmentAccounting.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EquipmentAccounting.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

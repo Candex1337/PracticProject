@@ -6,6 +6,12 @@ namespace EquipmentAccounting.DAL.Data
 {
     public class EquipmentDbContext : DbContext
     {
+        public EquipmentDbContext() { }
+        public EquipmentDbContext(DbContextOptions<EquipmentDbContext> options)
+            : base(options)
+        {
+        }
+
         public DbSet<Department> Departments { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<EquipmentType> EquipmentTypes { get; set; }
@@ -16,9 +22,12 @@ namespace EquipmentAccounting.DAL.Data
         public DbSet<EquipmentSoftware> EquipmentSoftwares { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+            if (!optionsBuilder.IsConfigured)
+            {
+                string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
 
-            optionsBuilder.UseSqlServer(connectionString);
+                optionsBuilder.UseSqlServer(connectionString);
+            }
         }
     }
 }

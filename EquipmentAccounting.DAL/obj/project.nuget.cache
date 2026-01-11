@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "X4P1Ts67gQA=",
+  "dgSpecHash": "YGYc9e/Xmu4=",
   "success": true,
   "projectFilePath": "C:\\Users\\cande\\source\\repos\\PracticProject\\EquipmentAccounting.DAL\\EquipmentAccounting.DAL.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\cande\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.11\\microsoft.entityframeworkcore.abstractions.9.0.11.nupkg.sha512",
     "C:\\Users\\cande\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.11\\microsoft.entityframeworkcore.analyzers.9.0.11.nupkg.sha512",
     "C:\\Users\\cande\\.nuget\\packages\\microsoft.entityframeworkcore.design\\9.0.11\\microsoft.entityframeworkcore.design.9.0.11.nupkg.sha512",
+    "C:\\Users\\cande\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\9.0.11\\microsoft.entityframeworkcore.inmemory.9.0.11.nupkg.sha512",
     "C:\\Users\\cande\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.11\\microsoft.entityframeworkcore.relational.9.0.11.nupkg.sha512",
     "C:\\Users\\cande\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\9.0.11\\microsoft.entityframeworkcore.sqlserver.9.0.11.nupkg.sha512",
     "C:\\Users\\cande\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\9.0.11\\microsoft.entityframeworkcore.tools.9.0.11.nupkg.sha512",
@@ -79,6 +80,13 @@
     "C:\\Users\\cande\\.nuget\\packages\\system.text.json\\9.0.11\\system.text.json.9.0.11.nupkg.sha512",
     "C:\\Users\\cande\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\cande\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\cande\\.nuget\\packages\\xunit\\2.9.3\\xunit.2.9.3.nupkg.sha512",
+    "C:\\Users\\cande\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\cande\\.nuget\\packages\\xunit.analyzers\\1.18.0\\xunit.analyzers.1.18.0.nupkg.sha512",
+    "C:\\Users\\cande\\.nuget\\packages\\xunit.assert\\2.9.3\\xunit.assert.2.9.3.nupkg.sha512",
+    "C:\\Users\\cande\\.nuget\\packages\\xunit.core\\2.9.3\\xunit.core.2.9.3.nupkg.sha512",
+    "C:\\Users\\cande\\.nuget\\packages\\xunit.extensibility.core\\2.9.3\\xunit.extensibility.core.2.9.3.nupkg.sha512",
+    "C:\\Users\\cande\\.nuget\\packages\\xunit.extensibility.execution\\2.9.3\\xunit.extensibility.execution.2.9.3.nupkg.sha512",
     "C:\\Users\\cande\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.11\\microsoft.windowsdesktop.app.ref.9.0.11.nupkg.sha512",
     "C:\\Users\\cande\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.11\\microsoft.netcore.app.ref.9.0.11.nupkg.sha512",
     "C:\\Users\\cande\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.11\\microsoft.aspnetcore.app.ref.9.0.11.nupkg.sha512"
